@@ -26,7 +26,7 @@ def get_allmembers_xopportunity(request):
         member=str(result['person']['username'])
         url_data = 'https://torre.bio/api/bios/'+member
         listusers_loc.append(get_request(url_data)['person'])
-    datageojson=convert_geojson_userlist(listusers_loc)
+    datageojson=get_geojson_membersloc(listusers_loc)
     return JsonResponse(datageojson, safe=False)
 
 #Search Opportunities for skills
@@ -58,7 +58,7 @@ def get_request_opportxskill(request):
 #Search Peoples for skills
 @csrf_exempt
 def get_request_peoplexskill(request):
-    skill = '' + str(request.POST['skill'])
+    skill = '' + str(request.GET['skill'])
     url = "https://search.torre.co/people/_search"
 
     payload = "{\"skill/role\":{\"text\":\""+skill+"\",\"experience\":\"potential-to-develop\"}}"
@@ -78,8 +78,10 @@ def get_request_peoplexskill(request):
     'accept-language': 'es-ES,es;q=0.9,en-US;q=0.8,en;q=0.7'
     }
     response = requests.request("POST", url, headers=headers, data=payload)
-    data=response.text
-    return JsonResponse(json.loads(data), safe=False)
+    data_fromtorre=json.loads(response.text)['results']
+    #processing to geojson
+    data=get_geojson_usersloc(data_fromtorre)
+    return JsonResponse(data, safe=False)
 
 
 
@@ -89,6 +91,11 @@ def get_geojson_user(username):
     url_data = 'https://torre.bio/api/bios/'+username
     data=get_request(url_data)['person']['location']
     return convert_geojson_user(data)
+
+def get_onlyjson_user(username): 
+    url_data = 'https://torre.bio/api/bios/'+username
+    data=get_request(url_data)['person']['location']
+    return data
 
 def get_request(url_data):
     with urllib.request.urlopen(url_data) as url:
@@ -103,13 +110,11 @@ def convert_geojson_user(data):
     feature['geometry'] ={ 'type':"Point" , 'coordinates':[float(data['longitude']) ,float(data['latitude']) ]}
     feature['geometry_name'] = "the_geom"
     feature['type'] = "Feature"
-    feature['id'] = "ID"
-    print(feature)
+    feature['id'] = "ID" 
     properties = {}
     properties['Lat'] = float(data['latitude'])
     properties['Long'] = float(data['longitude'])
-
-    print(properties)
+ 
     feature['properties'] = properties
     features.append(feature)
     geojson['features'] = features
@@ -117,13 +122,12 @@ def convert_geojson_user(data):
 
     return geojson
 
-
-def convert_geojson_userlist(listusers_loc):
-    listdata=  listusers_loc['location']
+def get_geojson_membersloc(listmembers_loc):
+    listdata=  listmembers_loc['location']
     geojson = {}
     features = []
     
-    for data in listusers_loc:
+    for data in listmembers_loc:
         feature = {}
         feature['geometry'] ={ 'type':"Point" , 'coordinates':[float(data['longitude']) ,float(data['latitude']) ]}
         feature['geometry_name'] = "the_geom"
@@ -133,6 +137,39 @@ def convert_geojson_userlist(listusers_loc):
         properties['Lat'] = float(data['latitude'])
         properties['Long'] = float(data['longitude'])
         #properties['shortName'] = str(data['shortName'])
+        feature['properties'] = properties
+
+        features.append(feature)
+
+    geojson['features'] = features
+    geojson['crs'] = {"type": "name", "properties": {"name": "urn:ogc:def:crs:EPSG::4326"}}
+
+    return geojson
+
+def get_geojson_usersloc(listusers):
+    geojson = {}
+    features = []
+    
+    for data in listusers:
+        #get the coordinates of username
+        location_user=get_onlyjson_user(data['username'])
+        long_user=location_user['longitude']
+        lat_user=location_user['latitude']
+        
+        feature = {}
+        feature['geometry'] ={ 'type':"Point" , 'coordinates':[float(long_user) ,float(lat_user) ]}
+        feature['geometry_name'] = "the_geom"
+        feature['type'] = "Feature"
+        feature['id'] = "ID" 
+        properties = {}
+        properties['Lat'] = float(lat_user)
+        properties['Long'] = float(long_user)
+        properties['locationName'] = data['locationName']
+        properties['name'] = data['name']
+        properties['openTo'] = data['openTo']
+        properties['picture'] = data['picture']
+        properties['verified'] = data['verified']
+        properties['weight'] = data['weight']
         feature['properties'] = properties
 
         features.append(feature)
