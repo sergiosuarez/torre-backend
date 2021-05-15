@@ -1,0 +1,6 @@
+Django
+requests
+djangorestframework
+markdown
+django-filter
+urllib3

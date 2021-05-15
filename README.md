@@ -20,6 +20,15 @@ Features
 * Published GeoJSON web services
 * Customizable PostgreSQL version
 
+
+Installation
+----------------------
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+apt install python3.9-distutils
+python3.9 get-pip.py 
+pip3 install Django
+
+
 Constraints
 -----------
 
@@ -33,5 +42,3 @@ Support this Project!
 This project is run by Sergio Suarez. Please support him in their efforts to maintain and improve your skills with your comments :)
 
 * Sergio Suarez Cruz, Core Developer & Project Lead (`GitHub <https://github.com/sergiosuarez>`): expertise in Python/Django, hands-on Geo Apps and backend-frontend experience.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~
