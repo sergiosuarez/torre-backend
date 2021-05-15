@@ -25,10 +25,11 @@ def get_allmembers_xopportunity(request):
     for result in data:
         member=str(result['person']['username'])
         url_data = 'https://torre.bio/api/bios/'+member
-        listusers_loc.append(get_request(url_data)['person']['location'])
+        listusers_loc.append(get_request(url_data)['person'])
     datageojson=convert_geojson_userlist(listusers_loc)
     return JsonResponse(datageojson, safe=False)
 
+#Search Opportunities for skills
 @csrf_exempt
 def get_request_opportxskill(request):
     skill = '' + str(request.POST['skill'])
@@ -53,6 +54,34 @@ def get_request_opportxskill(request):
     response = requests.request("POST", url, headers=headers, data=payload)
     data=response.text
     return JsonResponse(json.loads(data), safe=False)
+
+#Search Peoples for skills
+@csrf_exempt
+def get_request_peoplexskill(request):
+    skill = '' + str(request.POST['skill'])
+    url = "https://search.torre.co/people/_search"
+
+    payload = "{\"skill/role\":{\"text\":\""+skill+"\",\"experience\":\"potential-to-develop\"}}"
+    headers = {
+    'authority': 'search.torre.co',
+    'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
+    'accept': 'application/json, text/plain, */*',
+    'x-torre-subject': '1052454',
+    'sec-ch-ua-mobile': '?0',
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36',
+    'content-type': 'application/json;charset=UTF-8',
+    'origin': 'https://torre.co',
+    'sec-fetch-site': 'same-site',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-dest': 'empty',
+    'referer': 'https://torre.co/',
+    'accept-language': 'es-ES,es;q=0.9,en-US;q=0.8,en;q=0.7'
+    }
+    response = requests.request("POST", url, headers=headers, data=payload)
+    data=response.text
+    return JsonResponse(json.loads(data), safe=False)
+
+
 
 ###UTILITIES
 
@@ -90,6 +119,7 @@ def convert_geojson_user(data):
 
 
 def convert_geojson_userlist(listusers_loc):
+    listdata=  listusers_loc['location']
     geojson = {}
     features = []
     

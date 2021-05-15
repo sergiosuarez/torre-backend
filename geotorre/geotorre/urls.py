@@ -24,5 +24,6 @@ urlpatterns = [
     path("get_location_user", views.get_location_username, name="get_location_username"),
     path("get_allmembers_xopportunity", views.get_allmembers_xopportunity, name="get_allmembers_xopportunity"),
     path("get_request_opportxskill", views.get_request_opportxskill, name="get_request_opportxskill"),
+    path("get_request_peoplexskill", views.get_request_peoplexskill, name="get_request_peoplexskill"),
     
 ]
