@@ -170,6 +170,7 @@ def get_geojson_usersloc(listusers):
         properties['picture'] = data['picture']
         properties['verified'] = data['verified']
         properties['weight'] = data['weight']
+        properties['compensations'] = data['compensations']
         feature['properties'] = properties
 
         features.append(feature)
@@ -178,3 +179,4 @@ def get_geojson_usersloc(listusers):
     geojson['crs'] = {"type": "name", "properties": {"name": "urn:ogc:def:crs:EPSG::4326"}}
 
     return geojson
+
