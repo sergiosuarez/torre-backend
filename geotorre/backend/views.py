@@ -58,8 +58,9 @@ def get_request_opportxskill(request):
 #Search Peoples for skills
 @csrf_exempt
 def get_request_peoplexskill(request):
-    skill = '' + str(request.GET['skill'])
-    url = "https://search.torre.co/people/_search"
+    skill = '' + str(request.GET['parameters']).split(',')[0]
+    size = '' + str(request.GET['parameters']).split(',')[1]
+    url = "https://search.torre.co/people/_search?page=0&size="+size
 
     payload = "{\"skill/role\":{\"text\":\""+skill+"\",\"experience\":\"potential-to-develop\"}}"
     headers = {

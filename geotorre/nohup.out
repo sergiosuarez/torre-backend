@@ -29,3 +29,326 @@ Starting development server at http://209.145.62.164:8000/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
 [17/May/2021 07:04:47] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7220
+/opt/torre-backend/geotorre/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 17, 2021 - 07:04:38
+Django version 3.2.3, using settings 'geotorre.settings'
+Starting development server at http://209.145.62.164:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[17/May/2021 07:11:45] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 07:13:14] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 07:14:58] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 07:18:26] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 07:18:55] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 07:20:52] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 07:20:53] "GET /get_request_peoplexskill?skill=PHP HTTP/1.1" 200 6173
+[17/May/2021 07:22:58] "GET /get_request_peoplexskill?skill=PHP HTTP/1.1" 200 6173
+[17/May/2021 07:25:41] "GET /get_request_peoplexskill?skill=PHP HTTP/1.1" 200 6173
+[17/May/2021 07:50:46] "GET /get_request_peoplexskill?skill=PHP HTTP/1.1" 200 6173
+[17/May/2021 07:51:26] "GET /get_request_peoplexskill?skill=PHP HTTP/1.1" 200 6173
+[17/May/2021 07:52:17] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 07:54:09] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 07:58:35] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 09:15:12] code 400, message Bad request syntax ('\x16\x03\x01\x00\x8c\x01\x00\x00\x88\x03\x03ó\x8dÏð\x89úY?u')
+[17/May/2021 09:15:12] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Not Found: /
+[17/May/2021 09:30:13] "GET / HTTP/1.1" 404 2685
+[17/May/2021 09:42:29] code 400, message Bad request syntax ('\x01\x01æ')
+[17/May/2021 09:42:29] "æ" 400 -
+[17/May/2021 13:28:40] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 13:29:48] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 13:31:09] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 13:34:22] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 13:47:40] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 13:48:07] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 13:48:46] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 13:49:25] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 13:51:00] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:01:35] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:02:50] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:06:42] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:09:29] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:13:20] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:14:10] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:14:25] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:19:00] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:43:41] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:44:42] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:46:53] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:50:15] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:53:18] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 15:54:03] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 16:00:36] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 16:02:48] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 16:03:29] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 16:05:49,129] - Broken pipe from ('167.248.133.54', 41506)
+
+Not Found: /
+[17/May/2021 16:05:50] "GET / HTTP/1.1" 404 2690
+[17/May/2021 16:05:50,169] - Broken pipe from ('167.248.133.54', 35228)
+
+Not Found: /
+[17/May/2021 16:05:50] "GET / HTTP/1.1" 404 2690
+[17/May/2021 16:41:45] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 17:37:29] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 17:44:04] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 17:48:10] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+[17/May/2021 17:48:33] "GET /get_request_peoplexskill?skill=PHP HTTP/1.1" 200 6173
+[17/May/2021 17:53:22] "GET /get_request_peoplexskill?skill=PHP HTTP/1.1" 200 6173
+[17/May/2021 17:54:11] "GET /get_request_peoplexskill?skill=PYTHON&page50 HTTP/1.1" 200 7210
+[17/May/2021 17:54:30] "GET /get_request_peoplexskill?skill=SQL&page50 HTTP/1.1" 200 6523
+/opt/torre-backend/geotorre/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 17, 2021 - 07:11:31
+Django version 3.2.3, using settings 'geotorre.settings'
+Starting development server at http://209.145.62.164:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[17/May/2021 18:01:31] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 7210
+Not Found: /favicon.ico
+[17/May/2021 18:01:32] "GET /favicon.ico HTTP/1.1" 404 2741
+/opt/torre-backend/geotorre/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 17, 2021 - 18:00:59
+Django version 3.2.3, using settings 'geotorre.settings'
+Starting development server at http://209.145.62.164:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[17/May/2021 18:03:11] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 32695
+[17/May/2021 18:03:23] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 32695
+/opt/torre-backend/geotorre/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 17, 2021 - 18:01:58
+Django version 3.2.3, using settings 'geotorre.settings'
+Starting development server at http://209.145.62.164:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[17/May/2021 18:09:50] "GET /get_request_peoplexskill?skill=PYTHON HTTP/1.1" 200 20108
+[17/May/2021 18:10:29] "GET /get_request_peoplexskill?skill=SQL&page50 HTTP/1.1" 200 20158
+/opt/torre-backend/geotorre/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 17, 2021 - 18:09:34
+Django version 3.2.3, using settings 'geotorre.settings'
+Starting development server at http://209.145.62.164:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /get_request_peoplexskill
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'size'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/torre-backend/geotorre/backend/views.py", line 62, in get_request_peoplexskill
+    size = '' + str(request.GET['size'])
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'size'
+[17/May/2021 18:11:53] "GET /get_request_peoplexskill?skill=PHP&page50 HTTP/1.1" 500 71368
+Internal Server Error: /get_request_peoplexskill
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'size'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/torre-backend/geotorre/backend/views.py", line 62, in get_request_peoplexskill
+    size = '' + str(request.GET['size'])
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'size'
+[17/May/2021 18:12:07] "GET /get_request_peoplexskill?skill=PHP&pagenull HTTP/1.1" 500 71388
+Internal Server Error: /get_request_peoplexskill
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'size'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/torre-backend/geotorre/backend/views.py", line 62, in get_request_peoplexskill
+    size = '' + str(request.GET['size'])
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'size'
+[17/May/2021 18:13:23] "GET /get_request_peoplexskill?skill=PHP&size50 HTTP/1.1" 500 71368
+Internal Server Error: /get_request_peoplexskill
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'size'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/torre-backend/geotorre/backend/views.py", line 62, in get_request_peoplexskill
+    size = '' + str(request.GET['size'])
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'size'
+[17/May/2021 18:14:41] "GET /get_request_peoplexskill?skill=PHP&size50 HTTP/1.1" 500 71473
+Internal Server Error: /get_request_peoplexskill
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'size'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/torre-backend/geotorre/backend/views.py", line 62, in get_request_peoplexskill
+    size = '' + str(request.GET['size'])
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'size'
+[17/May/2021 18:15:36] "GET /get_request_peoplexskill?skill=PHP&size50 HTTP/1.1" 500 71368
+Internal Server Error: /get_request_peoplexskill
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'size'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/torre-backend/geotorre/backend/views.py", line 62, in get_request_peoplexskill
+    size = '' + str(request.GET['size'])
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'size'
+[17/May/2021 18:15:41] "GET /get_request_peoplexskill?skill=PHP&size50 HTTP/1.1" 500 71368
+/opt/torre-backend/geotorre/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 17, 2021 - 18:11:39
+Django version 3.2.3, using settings 'geotorre.settings'
+Starting development server at http://209.145.62.164:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[17/May/2021 18:17:44] "GET /get_request_peoplexskill?skill=PHP&size50 HTTP/1.1" 200 95
+[17/May/2021 18:17:50] "GET /get_request_peoplexskill?skill=PHP&size50 HTTP/1.1" 200 95
+/opt/torre-backend/geotorre/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 17, 2021 - 18:17:40
+Django version 3.2.3, using settings 'geotorre.settings'
+Starting development server at http://209.145.62.164:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[17/May/2021 18:18:14] "GET /get_request_peoplexskill?skill=PHP&size50 HTTP/1.1" 200 95
+/opt/torre-backend/geotorre/backend/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 17, 2021 - 18:18:10
+Django version 3.2.3, using settings 'geotorre.settings'
+Starting development server at http://209.145.62.164:8000/
+Quit the server with CONTROL-C.
+PHP
+0
+Watching for file changes with StatReloader
+Internal Server Error: /get_request_peoplexskill
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'parameters'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/torre-backend/geotorre/backend/views.py", line 61, in get_request_peoplexskill
+    skill = '' + str(request.GET['parameters']).split(',')[0]
+  File "/usr/local/lib/python3.9/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'parameters'
+[17/May/2021 18:20:29] "GET /get_request_peoplexskill?skill=PHP&size50 HTTP/1.1" 500 71501
+[17/May/2021 18:21:18] "GET /get_request_peoplexskill?parameters=PHP,50 HTTP/1.1" 200 30575
+[17/May/2021 18:21:57] "GET /get_request_peoplexskill?parameters=PHP,50 HTTP/1.1" 200 30575
+[17/May/2021 18:21:58] "GET /get_request_peoplexskill?parameters=PHP,50 HTTP/1.1" 200 30575
+[17/May/2021 18:25:25] "GET /get_request_peoplexskill?parameters=PHP,5 HTTP/1.1" 200 3197
+[17/May/2021 18:25:31] "GET /get_request_peoplexskill?parameters=PHP,50 HTTP/1.1" 200 30575
