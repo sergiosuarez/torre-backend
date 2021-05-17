@@ -94,7 +94,7 @@ def get_geojson_user(username):
 
 def get_onlyjson_user(username): 
     url_data = 'https://torre.bio/api/bios/'+username
-    data=get_request(url_data)['person']['location']
+    data=get_request(url_data)['person']
     return data
 
 def get_request(url_data):
@@ -153,8 +153,9 @@ def get_geojson_usersloc(listusers):
     for data in listusers:
         #get the coordinates of username
         location_user=get_onlyjson_user(data['username'])
-        long_user=location_user['longitude']
-        lat_user=location_user['latitude']
+        long_user=location_user['location']['longitude']
+        lat_user=location_user['location']['latitude']
+        created=location_user['created']
         
         feature = {}
         feature['geometry'] ={ 'type':"Point" , 'coordinates':[float(long_user) ,float(lat_user) ]}
@@ -171,6 +172,7 @@ def get_geojson_usersloc(listusers):
         properties['verified'] = data['verified']
         properties['weight'] = data['weight']
         properties['compensations'] = data['compensations']
+        properties['created']=str(created)   
         feature['properties'] = properties
 
         features.append(feature)
