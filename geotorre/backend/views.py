@@ -172,7 +172,7 @@ def get_geojson_usersloc(listusers):
         properties['verified'] = data['verified']
         properties['weight'] = data['weight']
         properties['compensations'] = data['compensations']
-        properties['created']=str(created)   
+        properties['created']=str(created).replace('T',' ').replace('Z','')
         feature['properties'] = properties
 
         features.append(feature)
